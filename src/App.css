@@ -63,7 +63,7 @@ h2 {
 Layout
 ================= */
 main {
-	min-height: 100vh;
+	min-height: 80vh;
 }
 .text-center {
 	text-align: center;
@@ -148,6 +148,10 @@ nav a:focus {
 .submenu-btn:hover {
 	cursor: pointer;
 	color: var(--blue);
+}
+
+.menu-vanilla {
+	margin-bottom: 6em;
 }
 
 /* mobile first layout - up to 480px width */
@@ -261,44 +265,44 @@ form.movie {
 }
 
 .page {
-  /* position: absolute;
+	/* position: absolute;
   left: 15px;
   right: 15px; */
-  min-height: 90vh;
+	min-height: 90vh;
 }
 
 .page-enter {
-  opacity: 0;
-  transform: scale(1.1);
+	opacity: 0;
+	transform: scale(1.1);
 }
 
 .page-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 300ms, transform 300ms;
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 300ms, transform 300ms;
 }
 
 .page-exit {
-  opacity: 1;
-  transform: scale(1);
+	opacity: 1;
+	transform: scale(1);
 }
 
 .page-exit-active {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 420ms, transform 420ms;
+	opacity: 0;
+	transform: scale(0.9);
+	transition: opacity 420ms, transform 420ms;
 }
 
 #footer {
-    position: fixed;
-    height: 136px;
-    background-color: black;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-    margin-top: 9em;
+	/* position: fixed; */
+	height: 136px;
+	background-color: black;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+	margin-top: 9em;
 }
-.progress{
-    color: red;
+.progress {
+	color: red;
 }

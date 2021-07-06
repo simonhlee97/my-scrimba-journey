@@ -9,7 +9,7 @@ export default function VanillaPage() {
 		<div className="container">
 			<h2 className="text-center">Vanilla JS Projects</h2>
 			<SubMenu>
-				<nav>
+				<nav className="menu-vanilla">
 					<ul>
 						<li className="submenu-btn">
 							<BiGame /> Pacman
@@ -25,7 +25,14 @@ export default function VanillaPage() {
 			</SubMenu>
 
 			<div className="momentum">
-				<Codepen hash="NWjxqBq" user="simonhlee97" loader={() => <div>Loading...</div>} />
+				<Codepen
+					title="Momentum Clone"
+					height={450}
+					defaultTab="result"
+					hash="NWjxqBq"
+					user="simonhlee97"
+					loader={() => <div>Loading...</div>}
+				/>
 			</div>
 		</div>
 	)
