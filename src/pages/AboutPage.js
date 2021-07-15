@@ -22,9 +22,10 @@ export default function AboutPage() {
                 UI design and React skills, so these courses were a perfect match for me.
             </p>
             <p>I've selected some projects and course notes to share on this website. All the code for this project can be found at GitHub. Feel free to clone or fork for your own use.</p>
-            <p className="progress">
-                This project is still <GrInProgress /> a work in progress and I'll continue to add projects, notes.
-            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M23 10v4h-22v-4h22zm1-1h-24v6h24v-6zm-8 2h-14v2h14v-2z" />
+            </svg>
+            <p className="progress">This project is still a work in progress. I'll continue to add projects and notes.</p>
         </div>
     )
 }
