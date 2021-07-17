@@ -18,7 +18,7 @@ export default function Header() {
                 <div>
                     <h1 className="site-title">
                         <BiStation />
-                        &nbsp; <Link to="/">Simon's Scrimba-Station</Link>
+                        &nbsp; <Link to="/">My-Scrimba-Journey</Link>
                     </h1>
 
                     <p className="subtitle">{current}</p>
