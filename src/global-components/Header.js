@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { BiStation } from 'react-icons/bi'
 
 export default function Header() {
     const [current, setCurrent] = useState(0)
@@ -17,8 +16,7 @@ export default function Header() {
             <div className="container-nav">
                 <div>
                     <h1 className="site-title">
-                        <BiStation />
-                        &nbsp; <Link to="/">My-Scrimba-Journey</Link>
+                        <Link to="/">My-Scrimba-Journey</Link>
                     </h1>
 
                     <p className="subtitle">{current}</p>

@@ -12,6 +12,7 @@ export default function CourseNotes() {
                 <li>Advanced React</li>
                 <li>Getting Hired</li>
             </ul>
+            <h3>COMING SOON ...</h3>
         </div>
     )
 }
