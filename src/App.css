@@ -32,8 +32,8 @@ Typography
 h1 {
     font-family: 'Lora', serif;
     font-weight: 400;
-    color: var(--darkblue);
-    font-size: 3.4rem;
+    color: var(--red);
+    font-size: 3rem;
     margin: 0;
 }
 p {
@@ -46,7 +46,7 @@ small {
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .subtitle {
@@ -71,8 +71,10 @@ main {
 
 .container {
     margin: 0 auto;
-    padding: 3em;
+    padding: 1.5em;
     max-width: 800px;
+    background: #000;
+    color: var(--white);
 }
 
 .container-nav {
@@ -132,7 +134,7 @@ nav a:focus {
         text-align: center;
     }
     nav a {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -147,7 +149,7 @@ nav a:focus {
 }
 .submenu-btn:hover {
     cursor: pointer;
-    color: var(--blue);
+    color: rgb(3, 3, 107);
 }
 
 .menu-vanilla {
@@ -297,16 +299,6 @@ form.movie {
     transition: opacity 420ms, transform 420ms;
 }
 
-#footer {
-    /* position: fixed; */
-    height: 136px;
-    background-color: black;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-    margin-top: 9em;
-}
 .progress {
     color: red;
 }

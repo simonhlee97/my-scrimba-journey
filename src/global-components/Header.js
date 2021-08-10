@@ -1,43 +1,34 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import { SiJavascript } from 'react-icons/si'
+import { FaReact, FaInfoCircle } from 'react-icons/fa'
+import { CgNotes } from 'react-icons/cg'
 import { Link } from 'react-router-dom'
 
+import styles from './header.module.css'
+
 export default function Header() {
-    const [current, setCurrent] = useState(0)
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrent(new Date().toLocaleTimeString())
-        }, 1000)
-        return () => clearInterval(interval)
-    }, [])
-
     return (
-        <header>
-            <div className="container-nav">
-                <div>
-                    <h1 className="site-title">
-                        <Link to="/">My-Scrimba-Journey</Link>
-                    </h1>
-
-                    <p className="subtitle">{current}</p>
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/vanilla">VanillaJS Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/react">React Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/notes">Course Notes</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <div className="header-container">
+            <header className={styles.header}>
+                <h1 className={styles.logo}>
+                    <Link to="/">My Scrimba Journey</Link>
+                    <br />
+                    <nav className={styles.nav}>
+                        <Link className={styles.anchor} to="/vanilla">
+                            <SiJavascript />
+                        </Link>
+                        <Link className={styles.anchor} to="/react">
+                            <FaReact />
+                        </Link>
+                        <Link className={styles.anchor} to="/notes">
+                            <CgNotes />
+                        </Link>
+                        <Link className={styles.anchor} to="/about">
+                            <FaInfoCircle />
+                        </Link>
+                    </nav>
+                </h1>
+            </header>
+        </div>
     )
 }
