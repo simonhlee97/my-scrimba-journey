@@ -11,7 +11,9 @@ export default function Header() {
         <div className="header-container">
             <header className={styles.header}>
                 <h1 className={styles.logo}>
-                    <Link to="/">My Scrimba Journey</Link>
+                    <Link className={styles.siteTitle} to="/">
+                        My Scrimba Journey
+                    </Link>
                     <br />
                     <nav className={styles.nav}>
                         <Link className={styles.anchor} to="/vanilla">

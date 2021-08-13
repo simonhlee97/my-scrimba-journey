@@ -14,10 +14,20 @@ export default function HomePage() {
         timeOfDay = 'evening'
     }
     return (
-        <div className="container homepage">
-            <h1>Hello, and good {timeOfDay}</h1>
+        <div className="page-wrapper-home">
+            <div className="subHeader">
+                <h1>Hello, and good {timeOfDay}</h1>
+            </div>
+
+            <h4>
+                This is a small collection of projects I built while going through{' '}
+                <a href="https://scrimba.com/learn/frontend" rel="noreferrer" target="_blank">
+                    Scrimba's Frontend Career Path
+                </a>
+                .
+            </h4>
             <p>
-                Here are some small projects I built (along with some course notes) while going through Scrimba's Frontend Career Path. This website was built with VueJS! Just kidding. React, of course.&nbsp;
+                This website was built with VueJS! Just kidding. React, of course.&nbsp;
                 <a href="https://scrimba.com/" target="_blank" rel="noreferrer">
                     Scrimba.com
                 </a>
@@ -25,9 +35,9 @@ export default function HomePage() {
             </p>
 
             <p>
-                <FaGithubAlt style={{ fontSize: 30 }} /> You can clone or fork the &nbsp;
+                You can clone or fork the &nbsp;
                 <a href="https://github.com/simonhlee97/my-scrimba-journey" target="_blank" rel="noreferrer">
-                    GitHub repo for this project
+                    GitHub repo for this project <FaGithubAlt style={{ fontSize: 20 }} />
                 </a>
                 . Feel free to give me feedback.
             </p>
@@ -43,6 +53,9 @@ export default function HomePage() {
                 <li>
                     This website is deployed on <a href="https://netlify.com">Netlify</a>
                 </li>
+                <li>Styled Components</li>
+                <li>React Router</li>
+                <li>react-codepen-embed</li>
             </ul>
         </div>
     )

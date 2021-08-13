@@ -3,6 +3,8 @@ import { GrInProgress } from 'react-icons/gr'
 
 const scrimba_image = {
     maxWidth: '720px',
+    textAlign: 'center',
+    margin: 'auto',
 }
 const image = {
     maxWidth: '100%',
@@ -11,8 +13,10 @@ const image = {
 
 export default function AboutPage() {
     return (
-        <div className="container">
-            <h2>About Me and This Project</h2>
+        <div className="page-wrapper-home">
+            <div className="subHeader">
+                <h2 className="text-center">About Me and This Project</h2>
+            </div>
             <div style={scrimba_image}>
                 <img style={image} src="https://res.cloudinary.com/ryucave/image/upload/v1626151552/Scrimba/scrimba_uh7q7y.jpg" alt="scrimba" />
             </div>

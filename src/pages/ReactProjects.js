@@ -9,57 +9,52 @@ import MovieApp from '../react-projects/movie-app/MovieApp'
 import Netflix from '../react-projects/netflix/src/Netflix'
 import Todos from '../react-projects/todos/Todos'
 import Capstone from '../react-projects/capstone/Capstone'
+import reactProjectStyle from './reactProject.module.css'
 
 export default function ReactProjects() {
-    // const [activeComponent, setActiveComponent] = useState('movieapp')
-
-    // const switchComponent = useCallback(
-    //     (newActiveComponent) => {
-    //         setActiveComponent(newActiveComponent)
-    //     },
-    //     [setActiveComponent]
-    // )
-
     return (
         <>
-            <div className="container">
-                <h2 className="text-center title">React Projects</h2>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/react/movieapp">
-                                <span className="submenu-btn">
-                                    <BiCameraMovie />
-                                    Movie Search App
-                                </span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/react/todos">
-                                <span className="submenu-btn">
-                                    <CgNotes />
-                                    Todos
-                                </span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/react/netflix">
-                                <span className="submenu-btn">
-                                    <BiCameraMovie />
-                                    Netflix Project
-                                </span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/react/buypics">
-                                <span className="submenu-btn">
-                                    <CgNotes />
-                                    BuyPics (Capstone)
-                                </span>
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
+            <div className="page-wrapper">
+                <div className={reactProjectStyle.subHeader}>
+                    <h2 className="text-center">React Projects</h2>
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link to="/react/movieapp">
+                                    <span className="submenu-btn">
+                                        <BiCameraMovie />
+                                        Movie Search App
+                                    </span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/todos">
+                                    <span className="submenu-btn">
+                                        <CgNotes />
+                                        Todos
+                                    </span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/netflix">
+                                    <span className="submenu-btn">
+                                        <BiCameraMovie />
+                                        Netflix Project
+                                    </span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/react/buypics">
+                                    <span className="submenu-btn">
+                                        <CgNotes />
+                                        PicStore
+                                    </span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
                 <Switch>
                     <Route path="/react/movieapp">
                         <MovieApp />

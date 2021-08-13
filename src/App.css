@@ -72,7 +72,7 @@ main {
 .container {
     margin: 0 auto;
     padding: 1.5em;
-    max-width: 800px;
+    /* max-width: 800px; */
     background: #000;
     color: var(--white);
 }
