@@ -9,6 +9,6 @@ Feature.Title = function FeatureTitle({ children, ...restProps }) {
     return <Title {...restProps}>{children}</Title>
 }
 
-Feature.Title = function FeatureTitle({ children, ...restProps }) {
+Feature.SubTitle = function FeatureSubTitle({ children, ...restProps }) {
     return <SubTitle {...restProps}>{children}</SubTitle>
 }

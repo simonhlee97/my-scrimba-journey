@@ -26,18 +26,17 @@ export default function HomePage() {
                 </a>
                 .
             </h4>
-            <p>
-                This website was built with VueJS! Just kidding. React, of course.&nbsp;
+
+            <h4>
                 <a href="https://scrimba.com/" target="_blank" rel="noreferrer">
                     Scrimba.com
-                </a>
-                &nbsp; is an online learning platform for aspiring web developers. They have many excellent free courses, as well as a Pro Member subscription option which includes premium content.
-            </p>
+                </a>{' '}
+                is an online learning platform for aspiring web developers. They have many excellent free courses, as well as a Pro Member subscription option which includes premium content.
+            </h4>
 
             <p>
-                You can clone or fork the &nbsp;
                 <a href="https://github.com/simonhlee97/my-scrimba-journey" target="_blank" rel="noreferrer">
-                    GitHub repo for this project <FaGithubAlt style={{ fontSize: 20 }} />
+                    GitHub repo for this project <FaGithubAlt style={{ fontSize: 16 }} />
                 </a>
                 . Feel free to give me feedback.
             </p>

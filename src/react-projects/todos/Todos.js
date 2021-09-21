@@ -1,7 +1,7 @@
 import React from 'react'
 import TodoItem from './Todo'
 import todosData from './todosData'
-import './todostyle.css'
+import todos from './todos.module.css'
 
 class Todos extends React.Component {
     constructor() {

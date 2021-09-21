@@ -1,13 +1,14 @@
 import React from 'react'
+import styles from './card.module.css'
 
 export default function MovieCard({ movie }) {
     const truncate = (str) => {
         return str.length > 290 ? str.substring(0, 284) + ' ...' : str
     }
     return (
-        <div className="card">
-            <div className="row">
-                <div className="column">
+        <div className={styles.card}>
+            <div className={styles.row}>
+                <div className={styles.column}>
                     <img className="card--image" src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`} alt={movie.title + ' poster'} />
                 </div>
                 <div className="column">

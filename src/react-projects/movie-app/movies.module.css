@@ -1,0 +1,33 @@
+.container {
+    text-align: center;
+}
+.title {
+    margin-bottom: 1em;
+}
+.wrapper {
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+.button {
+    background-color: whitesmoke;
+    color: black;
+    height: 40px;
+    width: 75px;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+.button:hover {
+    cursor: pointer;
+    color: blue;
+}
+.input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+.cardlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}

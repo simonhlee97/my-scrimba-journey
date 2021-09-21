@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import MovieCard from './MovieCard'
+import styles from './movies.module.css'
 
 export default function MovieApp() {
     return (
-        <div className="container">
-            <h1 className="page-title text-center">Movie Search App</h1>
+        <div className={styles.container}>
+            <h1 className={styles.title}>Movie Search App</h1>
             <SearchMovies />
         </div>
     )
@@ -30,15 +31,18 @@ function SearchMovies() {
     return (
         <>
             <form className="movie" onSubmit={searchMovies}>
-                <label className="label" htmlFor="query">
+                <label className={styles.label} htmlFor="query">
                     Movie Name
                 </label>
-                <input className="input" type="text" name="query" placeholder="i.e. Jurassic Park" value={query} onChange={(e) => setQuery(e.target.value)} />
-                <button className="button" type="submit">
-                    Search
-                </button>
+                <br />
+                <div className={styles.wrapper}>
+                    <input className={styles.input} type="text" name="query" placeholder="i.e. Jurassic Park" value={query} onChange={(e) => setQuery(e.target.value)} />
+                    <button className={styles.button} type="submit">
+                        Search
+                    </button>
+                </div>
             </form>
-            <div className="card-list">
+            <div className={styles.cardlist}>
                 {movies
                     .filter((movie) => movie.poster_path)
                     .map((movie) => (
